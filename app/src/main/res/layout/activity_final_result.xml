@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalResult">
+
+    <!-- TextView for Final Score -->
+    <TextView
+        android:id="@+id/finalScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: --/10"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView for High Score -->
+    <TextView
+        android:id="@+id/highScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score: --/10"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/finalScoreText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Quiz"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6A88"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/highScoreText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

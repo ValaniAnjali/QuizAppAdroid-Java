@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#FAF9F6"
+    tools:context=".MainActivity">
+
+    <!-- Score Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#ECECEC"
+        android:padding="10dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Score --/10"
+            android:textStyle="bold"
+            android:textColor="#4A4A4A"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtCorrect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Correct: --"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtWrong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wrong: --"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtViewTimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:30"
+            android:textStyle="bold"
+            android:textColor="#4A4A4A"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Question Header -->
+    <TextView
+        android:id="@+id/txtTotalQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Questions 1/10"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#3E3E3E"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/que"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Here we are supposed to add long text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:background="#F3F4F6"
+        android:elevation="2dp" />
+
+    <!-- Answer Options -->
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+id/radiobutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:textColor="#333333" />
+    </RadioGroup>
+
+    <!-- First Row: Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF" />
+
+    <!-- Restart Button -->
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Restart"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="#a3b0c4"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
